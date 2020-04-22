@@ -5,7 +5,7 @@
 #include <iostream>
 #include <string>
 using namespace std;
-//template <class T>
+template <class T>
 //class and type name are same. can be used in place of each other.
 // T is alias for type used for call of template.
 // template allows to write genric code without being concerned about type of variables
@@ -24,5 +24,6 @@ int main(){
 	const char * b = "12";
 
 	cout<<"max of both is : " <<maxof<const char *>(a,b)<<endl;
+	cout<<"max of both is : " <<maxof<int>(20,30)<<endl;
 	return 0;
 }
